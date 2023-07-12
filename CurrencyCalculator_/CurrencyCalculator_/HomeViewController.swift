@@ -7,8 +7,8 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
-    
+class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+
     @IBOutlet weak var menuButton: UIButton!
     
     @IBOutlet weak var signupButton: UIButton!
@@ -25,11 +25,26 @@ class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        let pickerView = UIPickerView()
+        firstTextField.inputView = pickerView
+        secondTextField.inputView = pickerView
+    }
+    
+    @IBAction func firstCountryTextFieldDidChange(_ sender: UITextField) {
+        
+    }
+    
+    @IBAction func secondCountryTextFieldDidChange(_ sender: UITextField) {
+        
+    }
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        <#code#>
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        <#code#>
     }
     
     
-   
-
 }
