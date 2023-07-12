@@ -142,8 +142,10 @@
                     <connections>
                         <outlet property="averageExchangeRatesLabel" destination="qun-a6-s2w" id="hBb-NH-fEa"/>
                         <outlet property="convertButton" destination="nfO-NC-YeK" id="jtw-Pm-ZfJ"/>
+                        <outlet property="firstDropDownTextField" destination="1dE-nU-4PT" id="8s0-Ot-g1Z"/>
                         <outlet property="firstTextField" destination="sah-fh-lTJ" id="lCl-hu-s5d"/>
                         <outlet property="menuButton" destination="gdt-Ru-LR4" id="s7v-Pf-CPz"/>
+                        <outlet property="secondDropDownTextField" destination="NvQ-cY-UKp" id="hnr-Lq-O6U"/>
                         <outlet property="secondTextField" destination="yY5-Lm-l6T" id="BhE-6w-Y0a"/>
                         <outlet property="signupButton" destination="1hL-s4-xfU" id="Tak-Zm-25O"/>
                         <outlet property="titleLabel" destination="aYz-L5-dqV" id="Cf4-ZE-dfX"/>
@@ -270,7 +272,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kx5-4O-9au" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1172" y="-4"/>
+            <point key="canvasLocation" x="-1236" y="-4"/>
         </scene>
     </scenes>
     <resources>
