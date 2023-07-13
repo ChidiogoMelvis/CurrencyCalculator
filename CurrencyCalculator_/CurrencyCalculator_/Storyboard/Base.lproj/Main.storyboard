@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Vef-PC-qn8">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -18,14 +18,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gdt-Ru-LR4">
-                                <rect key="frame" x="14" y="99" width="51" height="34.333333333333343"/>
+                                <rect key="frame" x="14" y="122.99999999999999" width="51" height="34.333333333333329"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="text.justify.left" catalog="system">
                                     <color key="baseForegroundColor" red="0.20392156859999999" green="0.81960784310000001" blue="0.52549019610000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1hL-s4-xfU">
-                                <rect key="frame" x="287" y="98" width="82" height="35"/>
+                                <rect key="frame" x="297" y="123" width="82" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="82" id="bdu-Bs-o7c"/>
                                     <constraint firstAttribute="height" constant="35" id="ziy-Ko-5ta"/>
@@ -106,7 +106,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Currency               Calculator                             " lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aYz-L5-dqV">
-                                <rect key="frame" x="14" y="193.33333333333337" width="365" height="150"/>
+                                <rect key="frame" x="14" y="237.33333333333337" width="365" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="aks-u4-R2D"/>
                                 </constraints>
@@ -121,7 +121,6 @@
                             <constraint firstItem="aYz-L5-dqV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="14" id="2BC-Fc-Dxv"/>
                             <constraint firstItem="qun-a6-s2w" firstAttribute="top" secondItem="nfO-NC-YeK" secondAttribute="bottom" constant="20" id="4nW-ez-tSq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yY5-Lm-l6T" secondAttribute="trailing" constant="14" id="C6m-yc-yBO"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1hL-s4-xfU" secondAttribute="bottom" constant="685" id="Ewv-2c-vSy"/>
                             <constraint firstItem="nfO-NC-YeK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="14" id="FaG-1w-Kci"/>
                             <constraint firstItem="gdt-Ru-LR4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="14" id="Frd-dL-dWJ"/>
                             <constraint firstItem="eWp-qU-c4s" firstAttribute="leading" secondItem="1dE-nU-4PT" secondAttribute="trailing" constant="14" id="HVA-t1-01V"/>
@@ -129,24 +128,25 @@
                             <constraint firstItem="qun-a6-s2w" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="Jnj-8F-A1C"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sah-fh-lTJ" secondAttribute="trailing" constant="14" id="M4V-wa-FU1"/>
                             <constraint firstItem="yY5-Lm-l6T" firstAttribute="top" secondItem="sah-fh-lTJ" secondAttribute="bottom" constant="10" id="MMY-zm-igB"/>
-                            <constraint firstItem="gdt-Ru-LR4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="OT6-Et-IbN"/>
+                            <constraint firstItem="gdt-Ru-LR4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="OT6-Et-IbN"/>
                             <constraint firstItem="1dE-nU-4PT" firstAttribute="top" secondItem="yY5-Lm-l6T" secondAttribute="bottom" constant="20" id="OXL-dr-eTr"/>
-                            <constraint firstItem="aYz-L5-dqV" firstAttribute="top" secondItem="gdt-Ru-LR4" secondAttribute="bottom" constant="60" id="Tzu-q1-azN"/>
                             <constraint firstItem="NvQ-cY-UKp" firstAttribute="top" secondItem="yY5-Lm-l6T" secondAttribute="bottom" constant="20" id="UxL-WO-vpB"/>
                             <constraint firstItem="NvQ-cY-UKp" firstAttribute="leading" secondItem="eWp-qU-c4s" secondAttribute="trailing" constant="14" id="V1L-xB-eQ9"/>
+                            <constraint firstItem="yY5-Lm-l6T" firstAttribute="top" secondItem="aYz-L5-dqV" secondAttribute="bottom" constant="27.999999999999943" id="WrX-bi-j7j"/>
+                            <constraint firstItem="1hL-s4-xfU" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="20" id="Xus-57-CFU"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nfO-NC-YeK" secondAttribute="trailing" constant="14" id="Ycw-8I-40w"/>
                             <constraint firstItem="1dE-nU-4PT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="14" id="aRq-Ag-doU"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qun-a6-s2w" secondAttribute="trailing" constant="30" id="e0X-tg-3Hd"/>
-                            <constraint firstItem="1hL-s4-xfU" firstAttribute="leading" secondItem="gdt-Ru-LR4" secondAttribute="trailing" constant="222" id="eNE-Ay-dhv"/>
                             <constraint firstItem="eWp-qU-c4s" firstAttribute="top" secondItem="yY5-Lm-l6T" secondAttribute="bottom" constant="20" id="fR8-Wx-mTm"/>
                             <constraint firstItem="yY5-Lm-l6T" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="14" id="fxF-h8-Pb0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1hL-s4-xfU" secondAttribute="trailing" constant="14" id="im3-hE-a91"/>
                             <constraint firstItem="nfO-NC-YeK" firstAttribute="top" secondItem="eWp-qU-c4s" secondAttribute="bottom" constant="40" id="liG-5U-Yj3"/>
-                            <constraint firstItem="1hL-s4-xfU" firstAttribute="leading" secondItem="gdt-Ru-LR4" secondAttribute="trailing" constant="222" id="pcs-v0-WO8"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NvQ-cY-UKp" secondAttribute="trailing" constant="14" id="qlS-v0-ym1"/>
                             <constraint firstAttribute="trailing" secondItem="aYz-L5-dqV" secondAttribute="trailing" constant="14" id="shF-E0-X1M"/>
                             <constraint firstItem="sah-fh-lTJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="14" id="vF4-Cm-ThK"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="9sK-e1-Cgi"/>
                     <connections>
                         <outlet property="averageExchangeRatesLabel" destination="qun-a6-s2w" id="hBb-NH-fEa"/>
                         <outlet property="convertButton" destination="nfO-NC-YeK" id="jtw-Pm-ZfJ"/>
@@ -161,7 +161,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2908" y="-4"/>
+            <point key="canvasLocation" x="-2546" y="5"/>
         </scene>
         <!--Graph View Controller-->
         <scene sceneID="W6k-Yq-XUY">
@@ -281,7 +281,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kx5-4O-9au" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2114" y="-4"/>
+            <point key="canvasLocation" x="-1836" y="5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="LTi-5O-ajA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Vef-PC-qn8" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1Mw-hy-d6r">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="a3O-tX-4Wr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o3b-mX-2a6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3457" y="-4"/>
         </scene>
     </scenes>
     <resources>
