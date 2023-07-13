@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+//MARK: - The CollectionViewCell Class
 class GraphCollectionViewCell: UICollectionViewCell {
     let identifier = "GraphCollectionViewCell"
 }

@@ -8,7 +8,7 @@
 import UIKit
 import RealmSwift
 import Realm
-
+//MARK: - Objects Outlets, IBAction, Configuring of Objects.
 class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate {
 
     @IBOutlet weak var menuButton: UIButton!
@@ -56,7 +56,7 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         performSegue(withIdentifier: "HomeViewControllerIdentifier", sender: self)
            
         }
-    
+  //MARK: - This function saves a currency conversion to a Realm Database
     func saveConversionToRealm(amount: Double, sourceCurrency: String, targetCurrency: String, result: Double) {
         do {
             let realm = try Realm()
@@ -80,6 +80,7 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         }
     }
     
+    //MARK: - This segues from the current ViewController to the next Viewcontroller based on which was stated.
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "HomeViewControllerIdentifier" {
             if let destinationVC = segue.destination as?

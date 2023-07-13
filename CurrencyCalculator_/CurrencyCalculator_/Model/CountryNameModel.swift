@@ -9,6 +9,7 @@ import Foundation
 import Realm
 import RealmSwift
 
+//MARK: - The Model objects Realm properties which inherits from Object
 class Country: Object {
     @Persisted var name: String = ""
 

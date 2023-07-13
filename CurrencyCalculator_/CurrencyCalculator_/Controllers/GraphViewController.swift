@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+//MARK: - Objects Outlets, Configuring of Objects.
 class GraphViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
     @IBOutlet weak var graphConvertButton: UIButton!
