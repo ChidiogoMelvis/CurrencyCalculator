@@ -7,7 +7,7 @@
 
 import UIKit
 
-class GraphViewController: UIViewController {
+class GraphViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
     @IBOutlet weak var graphConvertButton: UIButton!
     
@@ -30,11 +30,25 @@ class GraphViewController: UIViewController {
         let cornerMask = CACornerMask(arrayLiteral: .layerMinXMinYCorner, .layerMaxXMinYCorner)
         graphView.layer.cornerRadius = cornerRadius
         graphView.layer.maskedCorners = cornerMask
-        
+        configureCollectionView()
         graphView.frame = CGRect(x: 0, y: 0, width: 200, height: 100)
-        // Do any additional setup after loading the view.
+      
     }
     
-
+    func configureCollectionView() {
+        graphCollectionView.dataSource = self
+        graphCollectionView.delegate = self
+        graphCollectionView.register(GraphCollectionViewCell.self, forCellWithReuseIdentifier: "GraphCollectionViewCell")
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "GraphCollectionViewCell", for: indexPath) as! GraphCollectionViewCell
+        return cell
+    }
+    
 
 }
