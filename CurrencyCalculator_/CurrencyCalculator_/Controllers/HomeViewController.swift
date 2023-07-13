@@ -8,8 +8,6 @@
 import UIKit
 import RealmSwift
 import Realm
-import Alamofire
-import SwiftyJSON
 
 class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate {
 
