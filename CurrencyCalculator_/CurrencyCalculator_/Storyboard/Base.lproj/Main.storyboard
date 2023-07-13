@@ -61,6 +61,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="firstCountryTextFieldDidChange:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="d8U-le-pux"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NvQ-cY-UKp">
                                 <rect key="frame" x="239" y="485.33333333333331" width="140" height="49.999999999999943"/>
@@ -70,6 +73,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="secondCountryTextFieldDidChange:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="lzz-6a-wbK"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eWp-qU-c4s">
                                 <rect key="frame" x="168" y="485.33333333333331" width="57" height="34.999999999999943"/>

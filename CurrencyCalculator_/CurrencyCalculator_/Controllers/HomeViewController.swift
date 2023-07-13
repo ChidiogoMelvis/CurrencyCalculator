@@ -48,14 +48,14 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     }
     
     func currencyConversion() {
-            FetchCurrency().fetchConversionRate(from: "USD", to: "EUR")
+            FetchCurrency().fetchConversionRate(from: "NGN", to: "GHS")
         }
     
-    @IBAction func firstCountryTextFieldDidChange(_ sender: UITextField) {
+    @IBAction func firstDropDownTextFieldDidChange(_ sender: UITextField) {
         
     }
     
-    @IBAction func secondCountryTextFieldDidChange(_ sender: UITextField) {
+    @IBAction func secondDropDownTextFieldDidChange(_ sender: UITextField) {
         
     }
     
