@@ -102,6 +102,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		040A686A2A60882E00E9A3DE /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				04718BE82A5F5CCF00A636FB /* HomeViewController+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		04718BA42A5F214A00A636FB = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +133,7 @@
 		04718BAF2A5F214A00A636FB /* CurrencyCalculator_ */ = {
 			isa = PBXGroup;
 			children = (
+				040A686A2A60882E00E9A3DE /* Extension */,
 				04BAA9472A5FB05C0023F8FC /* Delegates */,
 				04BAA9462A5FB0410023F8FC /* NetworkManager */,
 				04BAA9452A5FB02E0023F8FC /* Model */,
@@ -184,7 +193,6 @@
 			isa = PBXGroup;
 			children = (
 				04718BE02A5F217A00A636FB /* HomeViewController.swift */,
-				04718BE82A5F5CCF00A636FB /* HomeViewController+Extension.swift */,
 				04718BB42A5F214A00A636FB /* ViewController.swift */,
 				04718BE22A5F34C400A636FB /* GraphViewController.swift */,
 				04718BE42A5F3C6700A636FB /* GraphCollectionViewCell.swift */,
