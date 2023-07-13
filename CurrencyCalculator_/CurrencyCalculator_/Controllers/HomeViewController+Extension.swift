@@ -38,18 +38,27 @@ extension HomeViewController {
         
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         if pickerView == firstDropDownTextField.inputView as? UIPickerView {
-            return firstCountriesArray[row]
+            return firstCountriesArray[row].name
         } else if pickerView == secondDropDownTextField.inputView as? UIPickerView {
-            return secondCountriesArray[row]
+            return secondCountriesArray[row].name
         }
         return nil
     }
-    
+
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         if pickerView == firstDropDownTextField.inputView as? UIPickerView {
-            firstDropDownTextField.text = firstCountriesArray[row]
+            let selectedCountry = firstCountriesArray[row]
+            firstDropDownTextField.text = selectedCountry.name
         } else if pickerView == secondDropDownTextField.inputView as? UIPickerView {
-            secondDropDownTextField.text = secondCountriesArray[row]
+            let selectedCountry = secondCountriesArray[row]
+            secondDropDownTextField.text = selectedCountry.name
         }
     }
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+            // Perform any necessary validation or logic when the text field's content changes
+            
+            return true
+        }
+
 }
