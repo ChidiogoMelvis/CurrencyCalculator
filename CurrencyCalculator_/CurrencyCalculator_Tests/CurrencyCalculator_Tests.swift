@@ -7,6 +7,8 @@
 
 import XCTest
 @testable import CurrencyCalculator_
+@testable import Realm
+@testable import RealmSwift
 
 final class CurrencyCalculator_Tests: XCTestCase {
 
