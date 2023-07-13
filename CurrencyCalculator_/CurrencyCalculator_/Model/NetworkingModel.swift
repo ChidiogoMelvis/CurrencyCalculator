@@ -9,7 +9,7 @@ import Foundation
 
 // MARK: - Welcome
 class Welcome: Codable {
-    let success: Bool
+    let success: Bool?
     let terms, privacy: String?
     let timestamp: Int?
     let source: String?

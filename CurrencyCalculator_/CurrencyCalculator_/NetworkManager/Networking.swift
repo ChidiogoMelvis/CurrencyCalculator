@@ -21,10 +21,11 @@ import SwiftyJSON
 
 class FetchCurrency {
     func fetchConversionRate(from baseCurrency: String, to targetCurrency: String) {
-       let apiKey = "f1ff5e0f7176f7c170fd383cd185cd9b"
+       //let apiKey = "f1ff5e0f7176f7c170fd383cd185cd9b"
         //let apiKey = "b45e0fcd78d5427756e67ed9"
-let urlString = "https://apilayer.net/api/live?access_key=\(apiKey)&currencies=EUR,GBP,CAD,PLN&source=USD&format=1"
-        
+let urlString = //"https://apilayer.net/api/live?access_key=\(apiKey)&currencies=EUR,GBP,CAD,PLN&source=USD&format=1"
+  "https://api.currencyapi.com/v3/latest?apikey=cur_live_EkbfS1A332A3tlxEoe4rB5DGB8YSlUKF2kxzF8xb"
+    
         if let url = URL(string: urlString) {
             let request = AF.request(url)
             request.responseDecodable(of: Welcome.self) { response in
