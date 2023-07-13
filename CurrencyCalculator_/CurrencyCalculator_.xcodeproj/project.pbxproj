@@ -28,6 +28,7 @@
 		047476012A5F722300362CC0 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047476002A5F722300362CC0 /* Networking.swift */; };
 		047476032A5F742300362CC0 /* CurrencyConversionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047476022A5F742300362CC0 /* CurrencyConversionModel.swift */; };
 		047476052A5F772E00362CC0 /* CountryNameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047476042A5F772E00362CC0 /* CountryNameModel.swift */; };
+		04BAA94C2A6019B90023F8FC /* NetworkingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BAA94B2A6019B90023F8FC /* NetworkingModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		047476002A5F722300362CC0 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		047476022A5F742300362CC0 /* CurrencyConversionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConversionModel.swift; sourceTree = "<group>"; };
 		047476042A5F772E00362CC0 /* CountryNameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryNameModel.swift; sourceTree = "<group>"; };
+		04BAA94B2A6019B90023F8FC /* NetworkingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				047476022A5F742300362CC0 /* CurrencyConversionModel.swift */,
+				04BAA94B2A6019B90023F8FC /* NetworkingModel.swift */,
 				047476042A5F772E00362CC0 /* CountryNameModel.swift */,
 			);
 			path = Model;
@@ -352,6 +355,7 @@
 			files = (
 				04718BE92A5F5CCF00A636FB /* HomeViewController+Extension.swift in Sources */,
 				047476052A5F772E00362CC0 /* CountryNameModel.swift in Sources */,
+				04BAA94C2A6019B90023F8FC /* NetworkingModel.swift in Sources */,
 				04718BB52A5F214A00A636FB /* ViewController.swift in Sources */,
 				04718BE52A5F3C6700A636FB /* GraphCollectionViewCell.swift in Sources */,
 				047476012A5F722300362CC0 /* Networking.swift in Sources */,

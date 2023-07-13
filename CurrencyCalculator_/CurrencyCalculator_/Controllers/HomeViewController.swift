@@ -25,7 +25,7 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        FetchCurrency().fetchConversionRate()
+        currencyConversion()
         configurePickerview()
         firstAmountTextField.delegate = self
         secondAmountTextField.delegate = self
@@ -46,6 +46,10 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         secondPickerView.dataSource = self
         secondDropDownTextField.inputView = secondPickerView
     }
+    
+    func currencyConversion() {
+            FetchCurrency().fetchConversionRate(from: "USD", to: "EUR")
+        }
     
     @IBAction func firstCountryTextFieldDidChange(_ sender: UITextField) {
         
