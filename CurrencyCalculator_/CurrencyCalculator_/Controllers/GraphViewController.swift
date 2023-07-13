@@ -26,7 +26,12 @@ class GraphViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        let cornerRadius: CGFloat = 20.0
+        let cornerMask = CACornerMask(arrayLiteral: .layerMinXMinYCorner, .layerMaxXMinYCorner)
+        graphView.layer.cornerRadius = cornerRadius
+        graphView.layer.maskedCorners = cornerMask
+        
+        graphView.frame = CGRect(x: 0, y: 0, width: 200, height: 100)
         // Do any additional setup after loading the view.
     }
     

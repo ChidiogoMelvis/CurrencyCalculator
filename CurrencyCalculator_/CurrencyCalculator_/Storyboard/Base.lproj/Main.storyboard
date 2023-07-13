@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ick-mg-FAp">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -25,7 +25,7 @@
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1hL-s4-xfU">
-                                <rect key="frame" x="287" y="99" width="82" height="34"/>
+                                <rect key="frame" x="287" y="98" width="82" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="82" id="bdu-Bs-o7c"/>
                                     <constraint firstAttribute="height" constant="35" id="ziy-Ko-5ta"/>
@@ -123,7 +123,6 @@
                             <constraint firstItem="qun-a6-s2w" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="Jnj-8F-A1C"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sah-fh-lTJ" secondAttribute="trailing" constant="14" id="M4V-wa-FU1"/>
                             <constraint firstItem="yY5-Lm-l6T" firstAttribute="top" secondItem="sah-fh-lTJ" secondAttribute="bottom" constant="10" id="MMY-zm-igB"/>
-                            <constraint firstItem="1hL-s4-xfU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="NNO-rP-DhD"/>
                             <constraint firstItem="gdt-Ru-LR4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="OT6-Et-IbN"/>
                             <constraint firstItem="1dE-nU-4PT" firstAttribute="top" secondItem="yY5-Lm-l6T" secondAttribute="bottom" constant="20" id="OXL-dr-eTr"/>
                             <constraint firstItem="aYz-L5-dqV" firstAttribute="top" secondItem="gdt-Ru-LR4" secondAttribute="bottom" constant="60" id="Tzu-q1-azN"/>
@@ -156,7 +155,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2047" y="-4"/>
+            <point key="canvasLocation" x="-2908" y="-4"/>
         </scene>
         <!--Graph View Controller-->
         <scene sceneID="W6k-Yq-XUY">
@@ -185,11 +184,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6LD-kT-TS0">
-                                <rect key="frame" x="0.0" y="240" width="393" height="578"/>
+                                <rect key="frame" x="0.0" y="240" width="393" height="612"/>
                                 <subviews>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="i0N-ud-DSN" customClass="graphCollectionView">
                                         <rect key="frame" x="14" y="95.666666666666714" width="365" height="350.33333333333326"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="350.33333333333326" id="cjR-is-GV9"/>
+                                        </constraints>
                                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="yzL-HF-kZe">
                                             <size key="itemSize" width="128" height="128"/>
                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -234,17 +236,15 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.45882352939999999" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="lzV-ga-qAG" firstAttribute="leading" secondItem="6LD-kT-TS0" secondAttribute="leading" constant="30" id="1rE-dN-ulc"/>
-                                    <constraint firstItem="jBc-NB-Xcs" firstAttribute="leading" secondItem="6LD-kT-TS0" secondAttribute="leading" constant="34" id="3Kx-Bp-cXA"/>
+                                    <constraint firstItem="lzV-ga-qAG" firstAttribute="baseline" secondItem="xGk-pf-UZ0" secondAttribute="baseline" id="7lL-HS-Aah"/>
                                     <constraint firstItem="i0N-ud-DSN" firstAttribute="top" secondItem="lzV-ga-qAG" secondAttribute="bottom" constant="40" id="7xJ-UB-xKb"/>
-                                    <constraint firstItem="i0N-ud-DSN" firstAttribute="leading" secondItem="6LD-kT-TS0" secondAttribute="leading" constant="14" id="879-Ns-wuK"/>
-                                    <constraint firstAttribute="bottom" secondItem="jBc-NB-Xcs" secondAttribute="bottom" constant="50" id="8aU-eM-3AB"/>
+                                    <constraint firstItem="i0N-ud-DSN" firstAttribute="leading" secondItem="6LD-kT-TS0" secondAttribute="leading" constant="14" id="Ba7-c1-WjW"/>
+                                    <constraint firstItem="i0N-ud-DSN" firstAttribute="centerX" secondItem="6LD-kT-TS0" secondAttribute="centerX" id="FsZ-QF-0Nc"/>
+                                    <constraint firstItem="lzV-ga-qAG" firstAttribute="leading" secondItem="6LD-kT-TS0" secondAttribute="leading" constant="30" id="IJM-EY-mjv"/>
                                     <constraint firstItem="jBc-NB-Xcs" firstAttribute="top" secondItem="i0N-ud-DSN" secondAttribute="bottom" constant="50" id="L42-gW-LL6"/>
-                                    <constraint firstAttribute="trailing" secondItem="jBc-NB-Xcs" secondAttribute="trailing" constant="34" id="Ou4-wZ-FvL"/>
-                                    <constraint firstItem="xGk-pf-UZ0" firstAttribute="top" secondItem="6LD-kT-TS0" secondAttribute="top" constant="20" id="VGH-jk-gIW"/>
-                                    <constraint firstItem="lzV-ga-qAG" firstAttribute="top" secondItem="6LD-kT-TS0" secondAttribute="top" constant="20" id="YVQ-4h-eRw"/>
-                                    <constraint firstAttribute="trailing" secondItem="xGk-pf-UZ0" secondAttribute="trailing" constant="30" id="gV7-ON-d8M"/>
-                                    <constraint firstAttribute="trailing" secondItem="i0N-ud-DSN" secondAttribute="trailing" constant="14" id="jAu-9T-L2Y"/>
+                                    <constraint firstItem="xGk-pf-UZ0" firstAttribute="leading" secondItem="lzV-ga-qAG" secondAttribute="trailing" constant="68.666666666666629" id="bH4-Xi-0G9"/>
+                                    <constraint firstItem="i0N-ud-DSN" firstAttribute="centerX" secondItem="jBc-NB-Xcs" secondAttribute="centerX" id="bRJ-59-2NY"/>
+                                    <constraint firstItem="i0N-ud-DSN" firstAttribute="top" secondItem="6LD-kT-TS0" secondAttribute="top" constant="95.666666666666742" id="pbG-tL-FyP"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -255,10 +255,10 @@
                             <constraint firstItem="Hwp-Nm-4OT" firstAttribute="trailing" secondItem="TJo-mZ-HGa" secondAttribute="trailing" constant="30" id="6uY-N2-TDc"/>
                             <constraint firstItem="TJo-mZ-HGa" firstAttribute="leading" secondItem="Hwp-Nm-4OT" secondAttribute="leading" constant="30" id="HCL-T9-sWu"/>
                             <constraint firstItem="6LD-kT-TS0" firstAttribute="leading" secondItem="Hwp-Nm-4OT" secondAttribute="leading" id="JKo-Id-gG8"/>
-                            <constraint firstItem="Hwp-Nm-4OT" firstAttribute="bottom" secondItem="6LD-kT-TS0" secondAttribute="bottom" id="QJ2-aW-prv"/>
                             <constraint firstItem="6LD-kT-TS0" firstAttribute="top" secondItem="TJo-mZ-HGa" secondAttribute="bottom" constant="50" id="XI0-bk-sMX"/>
                             <constraint firstItem="XJq-D7-4oA" firstAttribute="top" secondItem="Hwp-Nm-4OT" secondAttribute="top" constant="40" id="eaP-Y5-3sQ"/>
                             <constraint firstItem="Hwp-Nm-4OT" firstAttribute="trailing" secondItem="XJq-D7-4oA" secondAttribute="trailing" constant="14" id="enO-SA-yRa"/>
+                            <constraint firstAttribute="bottom" secondItem="6LD-kT-TS0" secondAttribute="bottom" id="io0-eH-KyI"/>
                             <constraint firstItem="XJq-D7-4oA" firstAttribute="leading" secondItem="Hwp-Nm-4OT" secondAttribute="leading" constant="14" id="mZG-8L-AaP"/>
                             <constraint firstItem="TJo-mZ-HGa" firstAttribute="top" secondItem="XJq-D7-4oA" secondAttribute="bottom" constant="20" id="rfL-pd-atX"/>
                         </constraints>
@@ -275,7 +275,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kx5-4O-9au" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1236" y="-4"/>
+            <point key="canvasLocation" x="-2114" y="-4"/>
         </scene>
     </scenes>
     <resources>
