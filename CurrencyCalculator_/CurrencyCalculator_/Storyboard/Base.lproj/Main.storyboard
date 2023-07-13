@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Vef-PC-qn8">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="46d-oO-fIC">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Home View Controller-->
+        <!--HomeViewController-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="CurrencyCalculator_" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="HomeViewController" id="BYZ-38-t0r" customClass="HomeViewController" customModule="CurrencyCalculator_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -61,9 +61,6 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="firstCountryTextFieldDidChange:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="d8U-le-pux"/>
-                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NvQ-cY-UKp">
                                 <rect key="frame" x="239" y="485.33333333333331" width="140" height="49.999999999999943"/>
@@ -73,9 +70,6 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="secondCountryTextFieldDidChange:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="lzz-6a-wbK"/>
-                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eWp-qU-c4s">
                                 <rect key="frame" x="168" y="485.33333333333331" width="57" height="34.999999999999943"/>
@@ -106,7 +100,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Currency               Calculator                             " lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aYz-L5-dqV">
-                                <rect key="frame" x="14" y="237.33333333333337" width="365" height="150"/>
+                                <rect key="frame" x="14" y="187.33333333333337" width="365" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="aks-u4-R2D"/>
                                 </constraints>
@@ -121,8 +115,9 @@
                             <constraint firstItem="aYz-L5-dqV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="14" id="2BC-Fc-Dxv"/>
                             <constraint firstItem="qun-a6-s2w" firstAttribute="top" secondItem="nfO-NC-YeK" secondAttribute="bottom" constant="20" id="4nW-ez-tSq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yY5-Lm-l6T" secondAttribute="trailing" constant="14" id="C6m-yc-yBO"/>
+                            <constraint firstItem="aYz-L5-dqV" firstAttribute="top" secondItem="gdt-Ru-LR4" secondAttribute="bottom" constant="30" id="D6v-qz-QN5"/>
                             <constraint firstItem="nfO-NC-YeK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="14" id="FaG-1w-Kci"/>
-                            <constraint firstItem="gdt-Ru-LR4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="14" id="Frd-dL-dWJ"/>
+                            <constraint firstItem="gdt-Ru-LR4" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Frd-dL-dWJ"/>
                             <constraint firstItem="eWp-qU-c4s" firstAttribute="leading" secondItem="1dE-nU-4PT" secondAttribute="trailing" constant="14" id="HVA-t1-01V"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qun-a6-s2w" secondAttribute="bottom" constant="166.66666666666663" id="ILV-u2-fLT"/>
                             <constraint firstItem="qun-a6-s2w" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="Jnj-8F-A1C"/>
@@ -130,9 +125,9 @@
                             <constraint firstItem="yY5-Lm-l6T" firstAttribute="top" secondItem="sah-fh-lTJ" secondAttribute="bottom" constant="10" id="MMY-zm-igB"/>
                             <constraint firstItem="gdt-Ru-LR4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="OT6-Et-IbN"/>
                             <constraint firstItem="1dE-nU-4PT" firstAttribute="top" secondItem="yY5-Lm-l6T" secondAttribute="bottom" constant="20" id="OXL-dr-eTr"/>
+                            <constraint firstItem="1hL-s4-xfU" firstAttribute="leading" secondItem="gdt-Ru-LR4" secondAttribute="trailing" constant="232" id="S2Q-TL-GZG"/>
                             <constraint firstItem="NvQ-cY-UKp" firstAttribute="top" secondItem="yY5-Lm-l6T" secondAttribute="bottom" constant="20" id="UxL-WO-vpB"/>
                             <constraint firstItem="NvQ-cY-UKp" firstAttribute="leading" secondItem="eWp-qU-c4s" secondAttribute="trailing" constant="14" id="V1L-xB-eQ9"/>
-                            <constraint firstItem="yY5-Lm-l6T" firstAttribute="top" secondItem="aYz-L5-dqV" secondAttribute="bottom" constant="27.999999999999943" id="WrX-bi-j7j"/>
                             <constraint firstItem="1hL-s4-xfU" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="20" id="Xus-57-CFU"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nfO-NC-YeK" secondAttribute="trailing" constant="14" id="Ycw-8I-40w"/>
                             <constraint firstItem="1dE-nU-4PT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="14" id="aRq-Ag-doU"/>
@@ -151,24 +146,25 @@
                         <outlet property="averageExchangeRatesLabel" destination="qun-a6-s2w" id="hBb-NH-fEa"/>
                         <outlet property="convertButton" destination="nfO-NC-YeK" id="jtw-Pm-ZfJ"/>
                         <outlet property="firstAmountTextField" destination="sah-fh-lTJ" id="4fh-OV-gHG"/>
-                        <outlet property="firstDropDownTextField" destination="1dE-nU-4PT" id="8s0-Ot-g1Z"/>
+                        <outlet property="firstDropDownTextField" destination="1dE-nU-4PT" id="ggf-HO-Gu3"/>
                         <outlet property="menuButton" destination="gdt-Ru-LR4" id="s7v-Pf-CPz"/>
                         <outlet property="secondAmountTextField" destination="yY5-Lm-l6T" id="Cha-HB-Uz5"/>
-                        <outlet property="secondDropDownTextField" destination="NvQ-cY-UKp" id="hnr-Lq-O6U"/>
+                        <outlet property="secondDropDownTextField" destination="NvQ-cY-UKp" id="udC-G2-Lfh"/>
                         <outlet property="signupButton" destination="1hL-s4-xfU" id="Tak-Zm-25O"/>
                         <outlet property="titleLabel" destination="aYz-L5-dqV" id="Cf4-ZE-dfX"/>
+                        <segue destination="ick-mg-FAp" kind="presentation" identifier="HomeViewControllerIdentifier" id="GxS-44-poA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2546" y="5"/>
+            <point key="canvasLocation" x="-2080" y="-447"/>
         </scene>
-        <!--Graph View Controller-->
+        <!--GraphViewController-->
         <scene sceneID="W6k-Yq-XUY">
             <objects>
-                <viewController id="ick-mg-FAp" customClass="GraphViewController" customModule="CurrencyCalculator_" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="GraphViewController" id="ick-mg-FAp" customClass="GraphViewController" customModule="CurrencyCalculator_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GIA-9L-6LM">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XJq-D7-4oA">
@@ -190,7 +186,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6LD-kT-TS0">
-                                <rect key="frame" x="0.0" y="240" width="393" height="612"/>
+                                <rect key="frame" x="0.0" y="240" width="393" height="543"/>
                                 <subviews>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="i0N-ud-DSN" customClass="graphCollectionView">
                                         <rect key="frame" x="14" y="95.666666666666714" width="365" height="350.33333333333326"/>
@@ -205,7 +201,7 @@
                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         </collectionViewFlowLayout>
                                         <cells>
-                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="MVh-cD-0MI" customClass="GraphCollectionViewCell" customModule="CurrencyCalculator_" customModuleProvider="target">
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GraphCollectionViewCell" id="MVh-cD-0MI" customClass="GraphCollectionViewCell" customModule="CurrencyCalculator_" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ghX-b8-yJT">
@@ -242,13 +238,14 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.45882352939999999" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="xGk-pf-UZ0" secondAttribute="trailing" constant="30" id="6Bd-kZ-Wwa"/>
                                     <constraint firstItem="lzV-ga-qAG" firstAttribute="baseline" secondItem="xGk-pf-UZ0" secondAttribute="baseline" id="7lL-HS-Aah"/>
                                     <constraint firstItem="i0N-ud-DSN" firstAttribute="top" secondItem="lzV-ga-qAG" secondAttribute="bottom" constant="40" id="7xJ-UB-xKb"/>
                                     <constraint firstItem="i0N-ud-DSN" firstAttribute="leading" secondItem="6LD-kT-TS0" secondAttribute="leading" constant="14" id="Ba7-c1-WjW"/>
                                     <constraint firstItem="i0N-ud-DSN" firstAttribute="centerX" secondItem="6LD-kT-TS0" secondAttribute="centerX" id="FsZ-QF-0Nc"/>
                                     <constraint firstItem="lzV-ga-qAG" firstAttribute="leading" secondItem="6LD-kT-TS0" secondAttribute="leading" constant="30" id="IJM-EY-mjv"/>
                                     <constraint firstItem="jBc-NB-Xcs" firstAttribute="top" secondItem="i0N-ud-DSN" secondAttribute="bottom" constant="50" id="L42-gW-LL6"/>
-                                    <constraint firstItem="xGk-pf-UZ0" firstAttribute="leading" secondItem="lzV-ga-qAG" secondAttribute="trailing" constant="68.666666666666629" id="bH4-Xi-0G9"/>
+                                    <constraint firstItem="xGk-pf-UZ0" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="lzV-ga-qAG" secondAttribute="trailing" symbolic="YES" id="bH4-Xi-0G9"/>
                                     <constraint firstItem="i0N-ud-DSN" firstAttribute="centerX" secondItem="jBc-NB-Xcs" secondAttribute="centerX" id="bRJ-59-2NY"/>
                                     <constraint firstItem="i0N-ud-DSN" firstAttribute="top" secondItem="6LD-kT-TS0" secondAttribute="top" constant="95.666666666666742" id="pbG-tL-FyP"/>
                                 </constraints>
@@ -281,25 +278,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kx5-4O-9au" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1836" y="5"/>
+            <point key="canvasLocation" x="-1378" y="-447"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="LTi-5O-ajA">
+        <scene sceneID="rc8-ph-lUN">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Vef-PC-qn8" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="46d-oO-fIC" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1Mw-hy-d6r">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="USQ-hR-Kl1">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="a3O-tX-4Wr"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="0mo-EY-9G1"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="o3b-mX-2a6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QDf-u5-pXS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3457" y="-4"/>
+            <point key="canvasLocation" x="-2839" y="-447"/>
         </scene>
     </scenes>
     <resources>

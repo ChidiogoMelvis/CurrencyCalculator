@@ -51,15 +51,9 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
             FetchCurrency().fetchConversionRate(from: "NGN", to: "GHS")
         }
     
-    @IBAction func firstDropDownTextFieldDidChange(_ sender: UITextField) {
-        
-    }
-    
-    @IBAction func secondDropDownTextFieldDidChange(_ sender: UITextField) {
-        
-    }
-    
     @IBAction func convertButtonTapped(_ sender: UIButton) {
+        
+        performSegue(withIdentifier: "HomeViewControllerIdentifier", sender: self)
            
         }
     
@@ -85,5 +79,15 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
             print("Error saving conversion to Realm: \(error)")
         }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "HomeViewControllerIdentifier" {
+            if let destinationVC = segue.destination as?
+            GraphViewController{
+                
+            }
+        }
+    }
+
 
 }
