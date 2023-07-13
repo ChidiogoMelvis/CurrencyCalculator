@@ -57,7 +57,6 @@ extension HomeViewController {
     }
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-            // Perform any necessary validation or logic when the text field's content changes
             
             return true
         }

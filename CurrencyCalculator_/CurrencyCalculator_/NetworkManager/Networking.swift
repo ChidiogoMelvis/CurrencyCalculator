@@ -8,7 +8,6 @@
 import Foundation
 import Alamofire
 import SwiftyJSON
-import PromiseKit
 
 class FetchCurrency {
     func fetchConversionRate() {

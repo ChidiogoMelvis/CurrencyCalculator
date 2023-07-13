@@ -14,7 +14,8 @@ class CurrencyConversion: Object {
     @Persisted var sourceCurrency: String = ""
     @Persisted var targetCurrency: String = ""
     @Persisted var result: Double = 0.0
-    }
+    
+}
 
 
 
