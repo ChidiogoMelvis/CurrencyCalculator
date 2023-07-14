@@ -8,6 +8,7 @@
 import UIKit
 import RealmSwift
 import Realm
+
 //MARK: - Objects Outlets, IBAction, Configuring of Objects.
 class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate {
     
@@ -51,10 +52,10 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     }
     
     @IBAction func convertButtonTapped(_ sender: UIButton) {
-        
         performSegue(withIdentifier: "HomeViewControllerIdentifier", sender: self)
         
     }
+    
     //MARK: - This function saves a currency conversion to a Realm Database
     func saveConversionToRealm(amount: Double, sourceCurrency: String, targetCurrency: String, result: Double) {
         do {

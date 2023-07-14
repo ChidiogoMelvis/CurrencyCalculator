@@ -10,18 +10,12 @@ import UIKit
 class GraphViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
     @IBOutlet weak var graphConvertButton: UIButton!
-    
     @IBOutlet weak var averageExchangeRatesLabel:
     UILabel!
-    
     @IBOutlet weak var graphView: UIView!
-    
     @IBOutlet weak var pastThirtyDaysButton: UIButton!
-    
     @IBOutlet weak var pastNinetyDaysButton: UIButton!
-    
     @IBOutlet weak var graphCollectionView: UICollectionView!
-    
     @IBOutlet weak var getRatesButton: UIButton!
     
     override func viewDidLoad() {

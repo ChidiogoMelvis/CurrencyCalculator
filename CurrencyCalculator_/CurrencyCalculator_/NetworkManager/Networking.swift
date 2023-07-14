@@ -22,9 +22,10 @@ import SwiftyJSON
 
 //MARK: - Networking using the imported framework
 class FetchCurrency {
+    let apiKey = "b45e0fcd78d5427756e67ed9"
     func fetchConversionRate(from baseCurrency: String, to targetCurrency: String) {
         let urlString =
-        "https://api.currencyapi.com/v3/latest?apikey=cur_live_EkbfS1A332A3tlxEoe4rB5DGB8YSlUKF2kxzF8xb"
+        "https://v6.exchangerate-api.com/v6/\(apiKey)/latest/USD"
         
         if let url = URL(string: urlString) {
             let request = AF.request(url)
@@ -32,7 +33,7 @@ class FetchCurrency {
                 switch response.result {
                 case .success(let data):
                     print(data)
-                    if let baseRates = data.quotes as? [String: [String: Double]],
+                    if let baseRates = data.conversionRates as? [String: [String: Double]],
                        let targetRates = baseRates[baseCurrency],
                        let rate = targetRates[targetCurrency] {
                         print("Exchange rate from \(baseCurrency) to \(targetCurrency): \(rate)")
