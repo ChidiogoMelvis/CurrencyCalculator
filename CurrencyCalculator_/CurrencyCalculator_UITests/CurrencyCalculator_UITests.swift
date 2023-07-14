@@ -20,7 +20,6 @@ final class CurrencyCalculator_UITests: XCTestCase {
         app = XCUIApplication()
         app.launch()
         
-       
     }
     
     func testLaunchPerformance() throws {

@@ -180,19 +180,19 @@
                                 </buttonConfiguration>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mid-market exchange rate at 13:38 UTC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TJo-mZ-HGa">
-                                <rect key="frame" x="30" y="169" width="333" height="21"/>
+                                <rect key="frame" x="30" y="169" width="333" height="20.333333333333343"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.45882352939999999" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6LD-kT-TS0">
-                                <rect key="frame" x="0.0" y="240" width="393" height="543"/>
+                                <rect key="frame" x="0.0" y="239.33333333333331" width="393" height="543.66666666666674"/>
                                 <subviews>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="i0N-ud-DSN">
-                                        <rect key="frame" x="14" y="95.666666666666714" width="365" height="350.33333333333326"/>
+                                        <rect key="frame" x="14" y="122" width="365" height="300"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="350.33333333333326" id="cjR-is-GV9"/>
+                                            <constraint firstAttribute="height" constant="300" id="cjR-is-GV9"/>
                                         </constraints>
                                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="yzL-HF-kZe">
                                             <size key="itemSize" width="128" height="128"/>
@@ -212,7 +212,7 @@
                                         </cells>
                                     </collectionView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lzV-ga-qAG">
-                                        <rect key="frame" x="30" y="19.999999999999996" width="132" height="35.666666666666657"/>
+                                        <rect key="frame" x="30" y="46.333333333333343" width="132" height="35.666666666666657"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Past 30 days">
                                             <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="18"/>
@@ -220,7 +220,7 @@
                                         </buttonConfiguration>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xGk-pf-UZ0">
-                                        <rect key="frame" x="230.66666666666663" y="19.999999999999996" width="132.33333333333337" height="35.666666666666657"/>
+                                        <rect key="frame" x="230.66666666666663" y="46.333333333333343" width="132.33333333333337" height="35.666666666666657"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Past 90 days">
                                             <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="18"/>
@@ -228,7 +228,10 @@
                                         </buttonConfiguration>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jBc-NB-Xcs">
-                                        <rect key="frame" x="34" y="496" width="325" height="32"/>
+                                        <rect key="frame" x="34" y="472" width="325" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="U6C-xy-S8w"/>
+                                        </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Get rates alert straight to your email inbox">
                                             <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="15"/>
@@ -242,12 +245,12 @@
                                     <constraint firstItem="lzV-ga-qAG" firstAttribute="baseline" secondItem="xGk-pf-UZ0" secondAttribute="baseline" id="7lL-HS-Aah"/>
                                     <constraint firstItem="i0N-ud-DSN" firstAttribute="top" secondItem="lzV-ga-qAG" secondAttribute="bottom" constant="40" id="7xJ-UB-xKb"/>
                                     <constraint firstItem="i0N-ud-DSN" firstAttribute="leading" secondItem="6LD-kT-TS0" secondAttribute="leading" constant="14" id="Ba7-c1-WjW"/>
-                                    <constraint firstItem="i0N-ud-DSN" firstAttribute="centerX" secondItem="6LD-kT-TS0" secondAttribute="centerX" id="FsZ-QF-0Nc"/>
+                                    <constraint firstAttribute="trailing" secondItem="i0N-ud-DSN" secondAttribute="trailing" constant="14" id="D8z-GX-ac4"/>
+                                    <constraint firstItem="jBc-NB-Xcs" firstAttribute="top" secondItem="i0N-ud-DSN" secondAttribute="bottom" constant="50" id="HyE-NF-jAm"/>
                                     <constraint firstItem="lzV-ga-qAG" firstAttribute="leading" secondItem="6LD-kT-TS0" secondAttribute="leading" constant="30" id="IJM-EY-mjv"/>
-                                    <constraint firstItem="jBc-NB-Xcs" firstAttribute="top" secondItem="i0N-ud-DSN" secondAttribute="bottom" constant="50" id="L42-gW-LL6"/>
+                                    <constraint firstItem="i0N-ud-DSN" firstAttribute="centerY" secondItem="6LD-kT-TS0" secondAttribute="centerY" id="SZ7-Hw-3U5"/>
                                     <constraint firstItem="xGk-pf-UZ0" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="lzV-ga-qAG" secondAttribute="trailing" symbolic="YES" id="bH4-Xi-0G9"/>
-                                    <constraint firstItem="i0N-ud-DSN" firstAttribute="centerX" secondItem="jBc-NB-Xcs" secondAttribute="centerX" id="bRJ-59-2NY"/>
-                                    <constraint firstItem="i0N-ud-DSN" firstAttribute="top" secondItem="6LD-kT-TS0" secondAttribute="top" constant="95.666666666666742" id="pbG-tL-FyP"/>
+                                    <constraint firstItem="jBc-NB-Xcs" firstAttribute="centerX" secondItem="i0N-ud-DSN" secondAttribute="centerX" id="qyu-35-nxS"/>
                                 </constraints>
                             </view>
                         </subviews>
