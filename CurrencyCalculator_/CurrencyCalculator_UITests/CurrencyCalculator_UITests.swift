@@ -20,8 +20,10 @@ final class CurrencyCalculator_UITests: XCTestCase {
         let editingTextFields = app.textFields["editingTextFields"]
         editingTextFields.tap()
         
+        let convertButton = app.buttons["convertButton"]
+        convertButton.tap()
+        
         XCTAssertTrue(editingTextFields.exists)
     }
-    
-    
+        
 }
