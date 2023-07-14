@@ -10,7 +10,7 @@ import RealmSwift
 import Realm
 //MARK: - Objects Outlets, IBAction, Configuring of Objects.
 class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate {
-
+    
     @IBOutlet weak var menuButton: UIButton!
     @IBOutlet weak var signupButton: UIButton!
     @IBOutlet weak var titleLabel: UILabel!
@@ -22,25 +22,24 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     @IBOutlet weak var averageExchangeRatesLabel: UILabel!
     
     let realm = try! Realm()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchNetworking()
         configurePickerview()
         firstAmountTextField.delegate = self
         secondAmountTextField.delegate = self
-
     }
     
     func configurePickerview() {
         dismissPickerView(for: firstDropDownTextField)
         dismissPickerView(for: secondDropDownTextField)
-
+        
         let firstPickerView = UIPickerView()
         firstPickerView.delegate = self
         firstPickerView.dataSource = self
         firstDropDownTextField.inputView = firstPickerView
-
+        
         let secondPickerView = UIPickerView()
         secondPickerView.delegate = self
         secondPickerView.dataSource = self
@@ -48,15 +47,15 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     }
     
     func fetchNetworking() {
-            FetchCurrency().fetchConversionRate(from: "EUR", to: "PLN")
-        }
+        FetchCurrency().fetchConversionRate(from: "EUR", to: "PLN")
+    }
     
     @IBAction func convertButtonTapped(_ sender: UIButton) {
         
         performSegue(withIdentifier: "HomeViewControllerIdentifier", sender: self)
-           
-        }
-  //MARK: - This function saves a currency conversion to a Realm Database
+        
+    }
+    //MARK: - This function saves a currency conversion to a Realm Database
     func saveConversionToRealm(amount: Double, sourceCurrency: String, targetCurrency: String, result: Double) {
         do {
             let realm = try Realm()
@@ -84,11 +83,10 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "HomeViewControllerIdentifier" {
             if let destinationVC = segue.destination as?
-            GraphViewController{
+                GraphViewController{
                 
             }
         }
     }
-
-
+    
 }

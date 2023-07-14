@@ -14,7 +14,7 @@ class Welcome: Codable {
     let timestamp: Int?
     let source: String?
     let quotes: [String: Double]?
-
+    
     init(success: Bool, terms: String, privacy: String, timestamp: Int, source: String, quotes: [String: Double]) {
         self.success = success
         self.terms = terms

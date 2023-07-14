@@ -19,7 +19,7 @@ extension HomeViewController {
         toolBar.isUserInteractionEnabled = true
         textField.inputAccessoryView = toolBar
     }
-
+    
     @objc func action() {
         view.endEditing(true)
     }
@@ -36,7 +36,7 @@ extension HomeViewController {
         }
         return 0
     }
-        
+    
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         if pickerView == firstDropDownTextField.inputView as? UIPickerView {
             return firstCountriesArray[row].name
@@ -45,7 +45,7 @@ extension HomeViewController {
         }
         return nil
     }
-
+    
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         if pickerView == firstDropDownTextField.inputView as? UIPickerView {
             let selectedCountry = firstCountriesArray[row]
@@ -57,8 +57,6 @@ extension HomeViewController {
     }
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-            
-            return true
-        }
-
+        return true
+    }
 }

@@ -23,9 +23,9 @@ import SwiftyJSON
 //MARK: - Networking using the imported framework
 class FetchCurrency {
     func fetchConversionRate(from baseCurrency: String, to targetCurrency: String) {
-let urlString =
-  "https://api.currencyapi.com/v3/latest?apikey=cur_live_EkbfS1A332A3tlxEoe4rB5DGB8YSlUKF2kxzF8xb"
-    
+        let urlString =
+        "https://api.currencyapi.com/v3/latest?apikey=cur_live_EkbfS1A332A3tlxEoe4rB5DGB8YSlUKF2kxzF8xb"
+        
         if let url = URL(string: urlString) {
             let request = AF.request(url)
             request.responseDecodable(of: Welcome.self) { response in

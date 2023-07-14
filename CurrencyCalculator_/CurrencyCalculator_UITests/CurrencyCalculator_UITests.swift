@@ -13,14 +13,14 @@ final class CurrencyCalculator_UITests: XCTestCase {
         continueAfterFailure = false
         
     }
-     
+    
     func testConversionAndSegue() throws {
-   let  app = XCUIApplication()
+        let  app = XCUIApplication()
         app.launch()
         let editingTextFields = app.textFields["editingTextFields"]
         editingTextFields.tap()
         
-                XCTAssertTrue(editingTextFields.exists)
+        XCTAssertTrue(editingTextFields.exists)
     }
     
     

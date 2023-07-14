@@ -23,7 +23,7 @@ class GraphViewController: UIViewController, UICollectionViewDataSource, UIColle
     @IBOutlet weak var graphCollectionView: UICollectionView!
     
     @IBOutlet weak var getRatesButton: UIButton!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let cornerRadius: CGFloat = 20.0
@@ -32,7 +32,7 @@ class GraphViewController: UIViewController, UICollectionViewDataSource, UIColle
         graphView.layer.maskedCorners = cornerMask
         configureCollectionView()
         graphView.frame = CGRect(x: 0, y: 0, width: 200, height: 100)
-      
+        
     }
     
     func configureCollectionView() {
@@ -50,5 +50,4 @@ class GraphViewController: UIViewController, UICollectionViewDataSource, UIColle
         return cell
     }
     
-
 }
