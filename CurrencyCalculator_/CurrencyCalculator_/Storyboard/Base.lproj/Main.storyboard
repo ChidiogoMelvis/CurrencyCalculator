@@ -38,6 +38,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="EUR" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sah-fh-lTJ">
                                 <rect key="frame" x="14" y="355.33333333333331" width="365" height="50"/>
                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <accessibility key="accessibilityConfiguration" identifier="editingTextFields"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="W6C-QC-KSa"/>
                                 </constraints>

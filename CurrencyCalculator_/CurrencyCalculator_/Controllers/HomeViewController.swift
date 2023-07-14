@@ -25,7 +25,7 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        currencyConversion()
+        fetchNetworking()
         configurePickerview()
         firstAmountTextField.delegate = self
         secondAmountTextField.delegate = self
@@ -47,8 +47,8 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         secondDropDownTextField.inputView = secondPickerView
     }
     
-    func currencyConversion() {
-            FetchCurrency().fetchConversionRate(from: "NGN", to: "GHS")
+    func fetchNetworking() {
+            FetchCurrency().fetchConversionRate(from: "EUR", to: "PLN")
         }
     
     @IBAction func convertButtonTapped(_ sender: UIButton) {
