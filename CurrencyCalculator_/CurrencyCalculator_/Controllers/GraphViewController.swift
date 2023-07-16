@@ -32,6 +32,7 @@ class GraphViewController: UIViewController, UICollectionViewDataSource, UIColle
     func configureCollectionView() {
         graphCollectionView.dataSource = self
         graphCollectionView.delegate = self
+        graphCollectionView.backgroundColor = .blue
         graphCollectionView.register(GraphCollectionViewCell.self, forCellWithReuseIdentifier: "GraphCollectionViewCell")
     }
     
