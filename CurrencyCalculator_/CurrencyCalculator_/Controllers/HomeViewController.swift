@@ -85,7 +85,7 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         if segue.identifier == "HomeViewControllerIdentifier" {
             if let destinationVC = segue.destination as?
                 GraphViewController{
-                
+                destinationVC.modalPresentationStyle = .fullScreen
             }
         }
     }

@@ -35,6 +35,7 @@ class GraphViewController: UIViewController, UICollectionViewDataSource, UIColle
         graphCollectionView.register(GraphCollectionViewCell.self, forCellWithReuseIdentifier: "GraphCollectionViewCell")
     }
     
+    //MARK: - CollectionView Protocols
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 10
     }
