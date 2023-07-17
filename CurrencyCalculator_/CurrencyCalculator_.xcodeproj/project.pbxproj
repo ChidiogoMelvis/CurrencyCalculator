@@ -21,8 +21,7 @@
 		04718BD22A5F214C00A636FB /* CurrencyCalculator_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04718BD12A5F214C00A636FB /* CurrencyCalculator_UITests.swift */; };
 		04718BD42A5F214C00A636FB /* CurrencyCalculator_UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04718BD32A5F214C00A636FB /* CurrencyCalculator_UITestsLaunchTests.swift */; };
 		04718BE12A5F217A00A636FB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04718BE02A5F217A00A636FB /* HomeViewController.swift */; };
-		04718BE32A5F34C400A636FB /* GraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04718BE22A5F34C400A636FB /* GraphViewController.swift */; };
-		04718BE52A5F3C6700A636FB /* GraphCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04718BE42A5F3C6700A636FB /* GraphCollectionViewCell.swift */; };
+		04718BE32A5F34C400A636FB /* ChartsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04718BE22A5F34C400A636FB /* ChartsViewController.swift */; };
 		04718BE92A5F5CCF00A636FB /* HomeViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04718BE82A5F5CCF00A636FB /* HomeViewController+Extension.swift */; };
 		04718BEC2A5F5FB900A636FB /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 04718BEB2A5F5FB900A636FB /* Alamofire */; };
 		04718BEF2A5F605C00A636FB /* PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = 04718BEE2A5F605C00A636FB /* PromiseKit */; };
@@ -67,8 +66,7 @@
 		04718BD12A5F214C00A636FB /* CurrencyCalculator_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyCalculator_UITests.swift; sourceTree = "<group>"; };
 		04718BD32A5F214C00A636FB /* CurrencyCalculator_UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyCalculator_UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		04718BE02A5F217A00A636FB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		04718BE22A5F34C400A636FB /* GraphViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphViewController.swift; sourceTree = "<group>"; };
-		04718BE42A5F3C6700A636FB /* GraphCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphCollectionViewCell.swift; sourceTree = "<group>"; };
+		04718BE22A5F34C400A636FB /* ChartsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsViewController.swift; sourceTree = "<group>"; };
 		04718BE82A5F5CCF00A636FB /* HomeViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+Extension.swift"; sourceTree = "<group>"; };
 		047476002A5F722300362CC0 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		047476022A5F742300362CC0 /* CurrencyConversionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConversionModel.swift; sourceTree = "<group>"; };
@@ -210,8 +208,7 @@
 			children = (
 				04718BE02A5F217A00A636FB /* HomeViewController.swift */,
 				04718BB42A5F214A00A636FB /* ViewController.swift */,
-				04718BE22A5F34C400A636FB /* GraphViewController.swift */,
-				04718BE42A5F3C6700A636FB /* GraphCollectionViewCell.swift */,
+				04718BE22A5F34C400A636FB /* ChartsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -389,10 +386,9 @@
 				047476052A5F772E00362CC0 /* CountryNameModel.swift in Sources */,
 				04BAA94C2A6019B90023F8FC /* NetworkingModel.swift in Sources */,
 				04718BB52A5F214A00A636FB /* ViewController.swift in Sources */,
-				04718BE52A5F3C6700A636FB /* GraphCollectionViewCell.swift in Sources */,
 				047476012A5F722300362CC0 /* Networking.swift in Sources */,
 				047476032A5F742300362CC0 /* CurrencyConversionModel.swift in Sources */,
-				04718BE32A5F34C400A636FB /* GraphViewController.swift in Sources */,
+				04718BE32A5F34C400A636FB /* ChartsViewController.swift in Sources */,
 				04718BB12A5F214A00A636FB /* AppDelegate.swift in Sources */,
 				04718BB32A5F214A00A636FB /* SceneDelegate.swift in Sources */,
 				04718BE12A5F217A00A636FB /* HomeViewController.swift in Sources */,

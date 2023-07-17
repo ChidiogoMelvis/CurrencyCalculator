@@ -5,7 +5,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
-        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -164,7 +163,7 @@
         <!--GraphViewController-->
         <scene sceneID="W6k-Yq-XUY">
             <objects>
-                <viewController title="GraphViewController" id="ick-mg-FAp" customClass="GraphViewController" customModule="CurrencyCalculator_" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="GraphViewController" id="ick-mg-FAp" customClass="ChartsViewController" customModule="CurrencyCalculator_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GIA-9L-6LM">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -190,29 +189,6 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6LD-kT-TS0">
                                 <rect key="frame" x="0.0" y="239.33333333333331" width="393" height="543.66666666666674"/>
                                 <subviews>
-                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="i0N-ud-DSN">
-                                        <rect key="frame" x="14" y="122" width="365" height="300"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="300" id="cjR-is-GV9"/>
-                                        </constraints>
-                                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="yzL-HF-kZe">
-                                            <size key="itemSize" width="128" height="128"/>
-                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                        </collectionViewFlowLayout>
-                                        <cells>
-                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GraphCollectionViewCell" id="MVh-cD-0MI" customClass="GraphCollectionViewCell" customModule="CurrencyCalculator_" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ghX-b8-yJT">
-                                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                </collectionViewCellContentView>
-                                            </collectionViewCell>
-                                        </cells>
-                                    </collectionView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lzV-ga-qAG">
                                         <rect key="frame" x="30" y="46.333333333333343" width="132" height="35.666666666666657"/>
                                         <state key="normal" title="Button"/>
@@ -240,19 +216,26 @@
                                             <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </buttonConfiguration>
                                     </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wat-9l-rTK">
+                                        <rect key="frame" x="14" y="132" width="365" height="260"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="260" id="icO-Ma-mKJ"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.45882352939999999" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstItem="wat-9l-rTK" firstAttribute="top" secondItem="lzV-ga-qAG" secondAttribute="bottom" constant="50" id="0ur-cG-VxB"/>
                                     <constraint firstAttribute="trailing" secondItem="xGk-pf-UZ0" secondAttribute="trailing" constant="30" id="6Bd-kZ-Wwa"/>
                                     <constraint firstItem="lzV-ga-qAG" firstAttribute="baseline" secondItem="xGk-pf-UZ0" secondAttribute="baseline" id="7lL-HS-Aah"/>
-                                    <constraint firstItem="i0N-ud-DSN" firstAttribute="top" secondItem="lzV-ga-qAG" secondAttribute="bottom" constant="40" id="7xJ-UB-xKb"/>
-                                    <constraint firstItem="i0N-ud-DSN" firstAttribute="leading" secondItem="6LD-kT-TS0" secondAttribute="leading" constant="14" id="Ba7-c1-WjW"/>
-                                    <constraint firstAttribute="trailing" secondItem="i0N-ud-DSN" secondAttribute="trailing" constant="14" id="D8z-GX-ac4"/>
-                                    <constraint firstItem="jBc-NB-Xcs" firstAttribute="top" secondItem="i0N-ud-DSN" secondAttribute="bottom" constant="50" id="HyE-NF-jAm"/>
                                     <constraint firstItem="lzV-ga-qAG" firstAttribute="leading" secondItem="6LD-kT-TS0" secondAttribute="leading" constant="30" id="IJM-EY-mjv"/>
-                                    <constraint firstItem="i0N-ud-DSN" firstAttribute="centerY" secondItem="6LD-kT-TS0" secondAttribute="centerY" id="SZ7-Hw-3U5"/>
                                     <constraint firstItem="xGk-pf-UZ0" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="lzV-ga-qAG" secondAttribute="trailing" symbolic="YES" id="bH4-Xi-0G9"/>
-                                    <constraint firstItem="jBc-NB-Xcs" firstAttribute="centerX" secondItem="i0N-ud-DSN" secondAttribute="centerX" id="qyu-35-nxS"/>
+                                    <constraint firstItem="wat-9l-rTK" firstAttribute="leading" secondItem="6LD-kT-TS0" secondAttribute="leading" constant="14" id="cdY-ym-ami"/>
+                                    <constraint firstAttribute="bottom" secondItem="jBc-NB-Xcs" secondAttribute="bottom" constant="51.666666666666742" id="eM6-zN-mka"/>
+                                    <constraint firstAttribute="trailing" secondItem="wat-9l-rTK" secondAttribute="trailing" constant="14" id="gRj-Uf-36e"/>
+                                    <constraint firstItem="jBc-NB-Xcs" firstAttribute="centerX" secondItem="6LD-kT-TS0" secondAttribute="centerX" id="nX4-0Y-ge4"/>
+                                    <constraint firstItem="lzV-ga-qAG" firstAttribute="top" secondItem="6LD-kT-TS0" secondAttribute="top" constant="46.333333333333343" id="zWX-KD-WXP"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -273,17 +256,17 @@
                     </view>
                     <connections>
                         <outlet property="averageExchangeRatesLabel" destination="TJo-mZ-HGa" id="Cqp-pX-YMq"/>
+                        <outlet property="chartsView" destination="wat-9l-rTK" id="R0W-6l-vKJ"/>
+                        <outlet property="containerView" destination="6LD-kT-TS0" id="SAV-LS-EcW"/>
                         <outlet property="getRatesButton" destination="jBc-NB-Xcs" id="CZV-dK-EG6"/>
-                        <outlet property="graphCollectionView" destination="i0N-ud-DSN" id="ksE-UB-Hj8"/>
                         <outlet property="graphConvertButton" destination="XJq-D7-4oA" id="bLm-VX-6JK"/>
-                        <outlet property="graphView" destination="6LD-kT-TS0" id="SAV-LS-EcW"/>
                         <outlet property="pastNinetyDaysButton" destination="xGk-pf-UZ0" id="EnY-tZ-lsK"/>
                         <outlet property="pastThirtyDaysButton" destination="lzV-ga-qAG" id="zAP-0z-DLv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kx5-4O-9au" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1378" y="-447"/>
+            <point key="canvasLocation" x="-1379.3893129770993" y="-447.18309859154931"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="rc8-ph-lUN">

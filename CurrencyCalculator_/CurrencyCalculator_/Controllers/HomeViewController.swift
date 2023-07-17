@@ -84,7 +84,7 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "HomeViewControllerIdentifier" {
             if let destinationVC = segue.destination as?
-                GraphViewController{
+                ChartsViewController{
                 destinationVC.modalPresentationStyle = .fullScreen
             }
         }
