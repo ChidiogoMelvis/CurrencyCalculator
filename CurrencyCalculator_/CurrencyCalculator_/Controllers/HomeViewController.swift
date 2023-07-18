@@ -56,30 +56,6 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         
     }
     
-    //MARK: - This function saves a currency conversion to a Realm Database
-    func saveConversionToRealm(amount: Double, sourceCurrency: String, targetCurrency: String, result: Double) {
-        do {
-            let realm = try Realm()
-            let conversion = CurrencyConversion()
-            conversion.amount = amount
-            conversion.sourceCurrency = sourceCurrency
-            conversion.targetCurrency = targetCurrency
-            conversion.result = result
-            
-            try realm.write {
-                realm.add(conversion)
-            }
-            
-            DispatchQueue.main.async {
-                self.firstAmountTextField.text = String(format: "%.2f", amount)
-                self.secondAmountTextField.text = String(format: "%.2f", result)
-            }
-            
-        } catch {
-            print("Error saving conversion to Realm: \(error)")
-        }
-    }
-    
     //MARK: - This segues from the current ViewController to the next Viewcontroller based on which was stated.
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "HomeViewControllerIdentifier" {
