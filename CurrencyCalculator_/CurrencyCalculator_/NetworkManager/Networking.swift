@@ -9,17 +9,6 @@ import Foundation
 import Alamofire
 import SwiftyJSON
 
-//MARK: - The Commented class is a networking call using the imported framework.
-//class FetchCurrency {
-//    func fetchConversionRate() {
-//        let apiKey = "b5528a9e7fb5b4ee0ff0025199583441"
-//        let request = AF.request("https://data.fixer.io/api/latest?access_key=\(apiKey)")
-//        request.responseJSON { (data) in
-//          print(data)
-//        }
-//      }
-//}
-
 //MARK: - Networking using the imported framework
 class FetchCurrency {
     let apiKey = "b45e0fcd78d5427756e67ed9"
