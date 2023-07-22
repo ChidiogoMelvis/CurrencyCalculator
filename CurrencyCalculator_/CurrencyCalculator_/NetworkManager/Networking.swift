@@ -12,17 +12,18 @@ import SwiftyJSON
 //MARK: - Networking using the imported framework
 class FetchCurrency {
     let apiKey = "b45e0fcd78d5427756e67ed9"
-    
     func fetchConversionRate(from baseCurrency: String, to targetCurrency: String) {
-        let urlString = "https://v6.exchangerate-api.com/v6/\(apiKey)/latest/USD"
-        
+        let urlString =
+        "https://v6.exchangerate-api.com/v6/\(apiKey)/latest/USD"
+
         if let url = URL(string: urlString) {
-            AF.request(url).responseJSON { response in
+            let request = AF.request(url)
+            request.responseDecodable(of: Welcome.self) { response in
                 switch response.result {
-                case .success(let value):
-                    let json = JSON(value)
-                    if let baseRates = json["conversion_rates"].dictionaryObject,
-                       let targetRates = baseRates[baseCurrency] as? [String: Double],
+                case .success(let data):
+                    print(data)
+                    if let baseRates = data.conversionRates as? [String: [String: Double]],
+                       let targetRates = baseRates[baseCurrency],
                        let rate = targetRates[targetCurrency] {
                         print("Exchange rate from \(baseCurrency) to \(targetCurrency): \(rate)")
                     } else {
